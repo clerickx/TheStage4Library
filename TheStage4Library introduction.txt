@@ -32,6 +32,13 @@ How will the Gentoo Stage4's Operate on other people systems Well it is quite co
 
 How will the Gentoo Stage4's be able to be used on other gpu systems etc? Well pretty simple solution here I will try to compile Gentoo for all 3 main vendors of GPUS like amd intel etc I will mention the specific version of stuff if i have to and i will have to have someone who those GPU's to test it for me as me personally got an amd gpu.
 
+What about other stuff about the make.conf?
+
+Well during the process of getting the stage4 you will need to do 3 things.
+1. Change fstab to your stuff
+2. Reinstall grub aka grub-install
+3. Reset the MAKEOPTS in the make.conf to your core count.
+
 
 
 
