@@ -91,7 +91,7 @@ Fun thing i wanted to include in both flavours and all of my stage4's I will ins
 How will the stage4's be named?
 Well i got an simple layout
 
-Distro-initsystem-flavour-gentooprofile-amd64/x86-amd/intel/nvidia
+Distro-DE-initsystem-flavour-gentooprofile-amd64/x86-amd/intel/nvidia
 
 What language will be the default?
 
