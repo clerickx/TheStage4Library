@@ -30,7 +30,13 @@ For gentoo stage4's I will be using the default gentoo-sources respectfully to f
 
 How will the Gentoo Stage4's Operate on other people systems Well it is quite complicated but to put it simply I will first introduce in the make.conf (/etc/portage/make.conf)  No march so it will work on all systems.
 
-How will the Gentoo Stage4's be able to be used on other gpu systems etc? Well pretty simple solution here I will try to compile Gentoo for all 3 main vendors of GPUS like amd intel etc I will mention the specific version of stuff if i have to and i will have to have someone who those GPU's to test it for me as me personally got an amd gpu.
+How will the Gentoo Stage4's be able to be used on other gpu systems etc? Well pretty simple in /etc/portage/make.conf you will have the VIDEO_CARDS="" section and here you have to replace whatever is inside the "" with the corresponding gpu types
+For AMD VIDEO_CARDS="amdgpu radeon radeonsi"
+FOR INTEL i965 VIDEO_CARDS="intel i965"
+FOR NVIDIA VIDEO_CARDS="nvidia"
+then run
+emerge --sync && emerge --ask --verbose --update --deep --with-bdeps=y --newuse @world && emerge --depclean
+
 
 What about other stuff about the make.conf?
 
@@ -39,7 +45,8 @@ Well during the process of getting the stage4 you will need to do 5 things.
 2. Reinstall grub aka grub-install
 3. Reset the MAKEOPTS in the make.conf to your core count.
 4. Change the mirrors (unless you live in the UK)
-5. Change your password (TheStage4Library as the default)
+5. Change your password (stage4 as the default)
+6. Change VIDEO_CARDS (depending on gpu)
 
 
 
@@ -66,7 +73,7 @@ The Full DE though will include my daily setup apps such as snapd etc I will lis
 For the User I wont be adding both for my Data and user preference it basically means that the DE and apps (if full flavour) or anything will not be touched as there is not even an user it all up to you.
 Just an plain system installation with no user also I will make the DM (Display manager) start on boot so you should probably Go into tty (Ctrl Alt F2 Usually i do) then log in as root and add an user and set an password for it.
 
-**Important notice** please listen: The root password as the Gentoo Stage4's will include will be TheStage4Library and please change it for your preference if you forget and dont know the password you will need to change it in chroot.
+**Important notice** please listen: The root password as the Gentoo Stage4's will include will be stage4 and please change it for your preference if you forget and dont know the password you will need to change it in chroot.
 
 
 
@@ -101,7 +108,7 @@ Fun thing i wanted to include in both flavours and all of my stage4's I will ins
 How will the stage4's be named?
 Well i got an simple layout
 
-Distro-DE-initsystem-flavour-gentooprofile-amd64/x86-amd/intel/nvidia
+Distro-DE-initsystem-flavour-gentooprofile-amd64/x86
 
 What language will be the default?
 
