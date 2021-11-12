@@ -34,10 +34,12 @@ How will the Gentoo Stage4's be able to be used on other gpu systems etc? Well p
 
 What about other stuff about the make.conf?
 
-Well during the process of getting the stage4 you will need to do 3 things.
+Well during the process of getting the stage4 you will need to do 5 things.
 1. Change fstab to your stuff
 2. Reinstall grub aka grub-install
 3. Reset the MAKEOPTS in the make.conf to your core count.
+4. Change the mirrors (unless you live in the UK)
+5. Change your password (TheStage4Library as the default)
 
 
 
@@ -88,6 +90,7 @@ Full flavour Application list:
 -gparted
 -microsoft teams
 -libreoffice-bin
+-layman
 
 
 
