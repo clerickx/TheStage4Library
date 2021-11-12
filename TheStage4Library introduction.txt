@@ -40,7 +40,7 @@ emerge --sync && emerge --ask --verbose --update --deep --with-bdeps=y --newuse 
 
 What about other stuff about the make.conf?
 
-Well during the process of getting the stage4 you will need to do 7 things.
+Well during the process of getting the stage4 you will need to do 8 things.
 1. Change fstab to your stuff
 2. Reinstall grub aka grub-install
 3. Reset the MAKEOPTS in the make.conf to your core count.
@@ -48,6 +48,7 @@ Well during the process of getting the stage4 you will need to do 7 things.
 5. Change your password (stage4 as the default)
 6. Change VIDEO_CARDS (depending on gpu)
 7. **optionally** remove vulkan from the USE="" in /etc/portage/make.conf if you wont be using vulkan or your gpu does not support it and maybe add some of your own stuff.
+8. Run emerge --sync && emerge --ask --verbose --update --deep --with-bdeps=y --newuse @world && emerge --depclean at the end.
 
 
 
