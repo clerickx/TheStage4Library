@@ -28,7 +28,7 @@ For other Distros that i may think such as MassOS i will not be taking any notes
 
 For gentoo stage4's I will be using the default gentoo-sources respectfully to fully expect user preference unlike stuff like git-sources (git kernel meaning very new unstable kernel) or zen etc that some people may not like (small note i do use the PF kernel as i like it) and i will be including both btrfs (btrfs-progs) and ext4 support.
 
-How will the Gentoo Stage4's Operate on other people systems Well it is quite complicated but to put it simply I will first introduce in the make.conf (/etc/portage/make.conf)  -march=native meaning for normal people it should automatically detect the Arch (architecture) and the model and all and will use that instead of manually typing it in and editing it in that is basically it for the Everyone section to make it more respectful.
+How will the Gentoo Stage4's Operate on other people systems Well it is quite complicated but to put it simply I will first introduce in the make.conf (/etc/portage/make.conf)  No march so it will work on all systems.
 
 How will the Gentoo Stage4's be able to be used on other gpu systems etc? Well pretty simple solution here I will try to compile Gentoo for all 3 main vendors of GPUS like amd intel etc I will mention the specific version of stuff if i have to and i will have to have someone who those GPU's to test it for me as me personally got an amd gpu.
 
