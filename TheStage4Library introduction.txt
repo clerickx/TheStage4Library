@@ -63,6 +63,8 @@ For the applications I made two flavours.
 
 The core flavour basically only includes the full system installed with the DE of choice and the system itself installed but the DE and applications wont be touched in anyway basically only the System and the DE.
 
+The core flavour will only include the package neofetch
+
 
 The Full DE though will include my daily setup apps such as snapd etc I will list them below but it is essentially my apps wine etc I will list them all to make the people see if they like my setup.
 
