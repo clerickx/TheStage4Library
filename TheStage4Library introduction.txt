@@ -102,6 +102,7 @@ Full flavour Application list:
 -microsoft teams
 -libreoffice-bin
 -layman
+-neofetch
 
 
 
@@ -112,7 +113,7 @@ Fun thing i wanted to include in both flavours and all of my stage4's I will ins
 How will the stage4's be named?
 Well i got an simple layout
 
-Distro-DE-initsystem-flavour-gentooprofile-amd64/x86
+Distro-DE-initsystem-flavour-amd64/x86
 
 What language will be the default?
 
