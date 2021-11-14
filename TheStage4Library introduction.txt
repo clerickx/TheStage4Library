@@ -71,7 +71,7 @@ Full flavour Application list:
 -wine-staging
 -corectl
 -discord-bin
--grapejuice
+-grapejuice (unable to include due to no access to run as  root)
 -goverlay
 -thunderbird-bin
 -multimc
