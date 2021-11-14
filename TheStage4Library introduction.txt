@@ -63,15 +63,12 @@ Just an plain system installation with no user also I will make the DM (Display 
 Important notice please listen: The root password as the Gentoo Stage4's will include will be stage4 and please change it for your preference if you forget and dont know the password you will need to change it in chroot.
 
 Full flavour Application list:
--Both snapd and flatpak
--Flatpak Caprine and 
+-Both snapd(for systemd) and flatpak
 -vscodium
--Snap Snap-store
 -Firefox-bin
 -wine-staging
 -corectl
 -discord-bin
--grapejuice (unable to include due to no access to run as  root)
 -goverlay
 -thunderbird-bin
 -multimc
@@ -83,10 +80,8 @@ Full flavour Application list:
 -microsoft teams
 -libreoffice-bin
 -layman
--neofetch
 -gamemode
--mangohud-bin
-NOTE FOR FLATPAK/SNAP APPS THEY WILL NOT BE INSTALLED ON  GENTOO STAGE4'S THEY ARE ONLY THERE IF THE USER WANTS TO MAKE AN FULL DESKTOP WHEN THEY ADD THE USER.
+-mangohud
 Fun thing i wanted to include in both flavours and all of my stage4's I will install webkit-gtk for you all so you dont have to suffer.
 
 How will the stage4's be named?
