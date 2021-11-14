@@ -1,86 +1,66 @@
 Welcome to the Stage4 Library!
-
-**Introduction**
-
+Introduction
 Originally i wanted to create an public release of Fully precompiled gentoo installs for normal use and why? You may ask well this is mainly for having backups and having a full precompiled desktop out of the box Problem is those files/backups are kinda big so they might take a bit to download.
 
 
-
-
-
-
 Now the current goal of the project is to suit users to an precompiled desktop with not only gentoo hopefully and try stuff which support chrooting in the installation such as massos (TheSonicMaster) and gentoo as originally thought of.
-
-
-
-
-
-
 In simple words it is basically an Entire drive install compressed and can be used in an OS by just extracting it and reinstalling grub and Possibly changing the fstab.
 
+
 For other Distros that i may think such as MassOS i will not be taking any notes of this currently only gentoo things for now as an proper point in gentoo that it is precompiled otherwise you would need to compile it and binary distros such as MassOS or ubuntu or whatever dont really have an point.
+Gentoo stage4's introduction.
 
-
-
-
-
-**Gentoo stage4's introduction.**
 
 For gentoo stage4's I will be using the default gentoo-sources respectfully to fully expect user preference unlike stuff like git-sources (git kernel meaning very new unstable kernel) or zen etc that some people may not like (small note i do use the PF kernel as i like it) and i will be including both btrfs (btrfs-progs) and ext4 support.
 
-How will the Gentoo Stage4's Operate on other people systems Well it is quite complicated but to put it simply I will first introduce in the make.conf (/etc/portage/make.conf)  No march so it will work on all systems.
 
+How will the Gentoo Stage4's Operate on other people systems Well it is quite complicated but to put it simply I will first introduce in the make.conf (/etc/portage/make.conf)  No march so it will work on all systems.
 How will the Gentoo Stage4's be able to be used on other gpu systems etc? Well pretty simple in /etc/portage/make.conf you will have the VIDEO_CARDS="" section and here you have to replace whatever is inside the "" with the corresponding gpu types
 For AMD VIDEO_CARDS="amdgpu radeon radeonsi"
 FOR INTEL i965 VIDEO_CARDS="intel i965"
 FOR NVIDIA VIDEO_CARDS="nvidia"
 then run
 emerge --sync && emerge --ask --verbose --update --deep --with-bdeps=y --newuse @world && emerge --depclean
-
-
 What about other stuff about the make.conf?
-
 Well during the process of getting the stage4 you will need to do 8 things.
-1. Change fstab to your stuff
-2. Reinstall grub aka grub-install
-3. Reset the MAKEOPTS in the make.conf to your core count.
-4. Change the mirrors (unless you live in the UK)
-5. Change your password (stage4 as the default)
-6. Change VIDEO_CARDS (depending on gpu)
-7. **optionally** remove vulkan from the USE="" in /etc/portage/make.conf if you wont be using vulkan or your gpu does not support it and maybe add some of your own stuff.
-8. Run emerge --sync && emerge --ask --verbose --update --deep --with-bdeps=y --newuse @world && emerge --depclean at the end.
 
+Change fstab to your stuff
+Reinstall grub aka grub-install
+Change the mirrors (unless you live in the UK)
+Change your password (stage4 as the default)
+Change VIDEO_CARDS (depending on gpu)
 
+optionally remove vulkan from the USE="" in /etc/portage/make.conf if you wont be using vulkan or your gpu does not support it and maybe add some of your own stuff.
+Run emerge --sync && emerge --ask --verbose --update --deep --with-bdeps=y --newuse @world && emerge --depclean at the end.
 
+optional Change the hostname from localhost or gentoo in some and change the hostname by the files below.
 
+openRC: /etc/openrc/conf.d/hostname you will see hostname="myhostname" or something else inside the "" replace it with something save and exit.
+systemD: /etc/hostame should be blank file and just type in the hostname of yours.
 What about the support the DE the user the Arch etc the applications and the init system and all tons of stuff for the Gentoo stage4's ? Well i had made an system for this.
 Basically i will try to provide must DE such as KDE etc xfce the most use ones I will not include the broken ones such as Deepin etc I will also add Unity DE support as i love that and some will appreciate that. For the init system question I will provide BOTH openRC and systemD respectfully and For the arch i will mainly do amd64/64bit but i will try to also import x86/32bit support adding 32bit support will not be terribly hard as my CPU supports both.
-
-
 For the applications I made two flavours.
-1. The Core flavours
-2. The full flavours
 
+The Core flavours
+The Gaming flavours
 
 The core flavour basically only includes the full system installed with the DE of choice and the system itself installed but the DE and applications wont be touched in anyway basically only the System and the DE.
+
 
 The core flavour will only include the package neofetch
 
 
-The Full DE though will include my daily setup apps such as snapd etc I will list them below but it is essentially my apps wine etc I will list them all to make the people see if they like my setup.
-
-
-
-
+The Gaming Flavour though will include my daily setup apps such as snapd etc I will list them below but it is essentially my apps wine etc I will list them all to make the people see if they like my setup and also the DE.
+NOTE FOR THE FLAVOURS I WILL NOT INCLUDE THE GAMING FLAVOURS IN THE NODESKTOP STAGE4'S AS IT WOULD WASTE TIME AND NOT BE HELPFUL AND WEBKIT-GTK WONT BE INCLUDED IN THE NODESKTOP VERSIONS.
 
 
 For the User I wont be adding both for my Data and user preference it basically means that the DE and apps (if full flavour) or anything will not be touched as there is not even an user it all up to you.
+
+
 Just an plain system installation with no user also I will make the DM (Display manager) start on boot so you should probably Go into tty (Ctrl Alt F2 Usually i do) then log in as root and add an user and set an password for it.
 
-**Important notice** please listen: The root password as the Gentoo Stage4's will include will be stage4 and please change it for your preference if you forget and dont know the password you will need to change it in chroot.
 
-
-
+Important notice please listen: The root password as the Gentoo Stage4's will include will be stage4 and please change it for your preference if you forget and dont know the password you will need to change it in chroot.
 
 Full flavour Application list:
 -Both snapd and flatpak
@@ -103,37 +83,28 @@ Full flavour Application list:
 -libreoffice-bin
 -layman
 -neofetch
-
-
-
+-gamemode
+-mangohud-bin
+NOTE FOR FLATPAK/SNAP APPS THEY WILL NOT BE INSTALLED ON THE NODESKTOP-FULL STAGE4'S
 Fun thing i wanted to include in both flavours and all of my stage4's I will install webkit-gtk for you all so you dont have to suffer.
-
-
 
 How will the stage4's be named?
 Well i got an simple layout
-
 Distro-DE-initsystem-flavour-amd64/x86
 
-What language will be the default?
 
+What language will be the default?
 I decided to leave it at en_US by default
 
-What fstab configuration will it be by default?
 
+What fstab configuration will it be by default?
 Well simple i will make it auto so you guys wont have to change that at least usually only change the LABEL=etc to your choice and maybe add home or swap maybe.
 Also The stage4's will be compiled in UEFI mode idk if that means you will be completely limited to UEFI but thats a note to take.
 
 Here ends the Gentoo stage4's introduction and questions.
 
-
-
-
-
-
-
-**How will i create the stage4's?**
-
+How will i create the stage4's?
 Simple mount the root partition only here i will do it at /mnt/gentoo and i run this :()
-
-sudo tar -c --zstd -pvf something.tar.zst your-files
+sudo tar -cJpvf file.tar.xz directory
+and to extract do
+sudo tar -xJpvf file.tar.xz
