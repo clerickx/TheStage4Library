@@ -42,7 +42,7 @@ Basically i will try to provide must DE such as KDE etc xfce the most use ones I
 For the applications I made two flavours.
 
 The Core flavours
-The Gaming flavours
+The Full flavours
 
 The core flavour basically only includes the full system installed with the DE of choice and the system itself installed but the DE and applications wont be touched in anyway basically only the System and the DE.
 
@@ -50,8 +50,8 @@ The core flavour basically only includes the full system installed with the DE o
 The core flavour will only include the package neofetch and webkit-gtk
 
 
-The Gaming Flavour though will include my daily setup apps such as snapd etc I will list them below but it is essentially my apps wine etc I will list them all to make the people see if they like my setup and also the DE.
-NOTE FOR THE FLAVOURS I WILL NOT INCLUDE THE GAMING FLAVOURS IN THE NODESKTOP STAGE4'S AS IT WOULD WASTE TIME AND NOT BE HELPFUL AND WEBKIT-GTK WONT BE INCLUDED IN THE NODESKTOP VERSIONS.
+The Full Flavour though will include my daily setup apps such as snapd etc I will list them below but it is essentially my apps wine etc I will list them all to make the people see if they like my setup and also the DE.
+NOTE FOR THE FLAVOURS I WILL NOT INCLUDE THE FULL FLAVOURS IN THE NODESKTOP STAGE4'S AS IT WOULD WASTE TIME AND NOT BE HELPFUL AND WEBKIT-GTK WONT BE INCLUDED IN THE NODESKTOP VERSIONS.
 
 
 For the User I wont be adding both for my Data and user preference it basically means that the DE and apps (if full flavour) or anything will not be touched as there is not even an user it all up to you.
