@@ -7,8 +7,6 @@ Please report issues and make requests if you have any also my discord is Xinc#0
 
 ## How to install the stage4's
 
-**NOTE**: FROM MY TESTS SEEMS LIKE THE MEGA DOWNLOAD AT THE NEAR END/END FREEZED THE ENTIRE SYSTEM USING FIREFOX AND I TESTED IT WITH GOOGLE CHROME AND WAS FINE PLEASE USE GOOGLE CHROME/CHROMIUM FOR DOWNLOADING IF YOU GET SIMILAR FREEZES.
-
 Hello so i assume you downloaded the stage4 from the tags section i hope.
 
 Well then open the terminal where the file is and then mount the ROOT only to /mnt/gentoo then run mv stage4** /mnt/gentoo
