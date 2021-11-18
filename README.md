@@ -11,6 +11,8 @@ Hello so i assume you downloaded the stage4 from the tags section i hope.
 
 Well then open the terminal where the file is and then mount the ROOT only to /mnt/gentoo then run mv stage4** /mnt/gentoo
 
+If you want the file to be saved in /mnt/gentoo exactly than please run the browser as root and set it to ask you where to save.
+
 ## Installation
 
 Mount root partition recommended /mnt/gentoo
