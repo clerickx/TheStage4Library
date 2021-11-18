@@ -22,7 +22,9 @@ cd /mnt/gentoo
 
 
 ###### **Download stage4**
-For this part as its in mega you gotta see the releases
+Hello so i do recommend using this piece of software
+https://github.com/tonikelope/megabasterd
+and just give it an direct link and the path simple
 
 ###### **Unpack stage4**
 ```
