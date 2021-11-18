@@ -15,23 +15,21 @@ Well then open the terminal where the file is and then mount the ROOT only to /m
 
 ## Installation
 
-Mount rootfs partition recommended /mnt/gentoo
+Mount root partition recommended /mnt/gentoo
 ```
 cd /mnt/gentoo
 ```
 
 
-###### Download stage4
-```
-wget <url>
-```
+###### **Download stage4**
+For this part as its in mega you gotta see the releases
 
-###### Unpack stage4
+###### **Unpack stage4**
 ```
 tar -xJpvf file.tar.xz
 ```
 
-###### Mounting the necessary filesystems
+###### **Mounting the necessary filesystems**
 ```
 mount --types proc /proc /mnt/gentoo/proc
 mount --rbind /sys /mnt/gentoo/sys
@@ -40,14 +38,15 @@ mount --rbind /dev /mnt/gentoo/dev
 mount --make-rslave /mnt/gentoo/dev
 ```
 
-###### Note: only when using non-gentoo media
+###### **Note: only when using non-gentoo media**
+which you probably will not be using. as far as i know the one mega doesn't allow direct link downloads
 ```
 test -L /dev/shm && rm /dev/shm && mkdir /dev/shm
 mount --types tmpfs --options nosuid,nodev,noexec shm /dev/shm
 chmod 1777 /dev/shm
 ```
 
-###### Entering the new environment
+###### **Entering the new environment**
 ```
 chroot /mnt/gentoo /bin/bash
 source /etc/profile
