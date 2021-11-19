@@ -28,7 +28,7 @@ and just give it an direct link and the path simple
 
 ### Unpack stage4
 ```
-tar -xJpvf file.tar.xz
+tar -xJpvf file.tar.xz 
 ```
 
 ### Mounting the necessary filesystems
