@@ -21,11 +21,16 @@ Step 1. install mega basterd extract it and run it with sudo ./Megabasterd.run a
 ### Unpack stage4
 ```
 tar -xJpvf file.tar.xz 
-
-## Fixing tree being to /mnt/gentoo or /tmp/gentoo instead of .
-
-Go into the tmp or mnt folder depending on the stage4 than mv gentoo /mnt/gentoo than rm -r tmp or gentoo than rm Gentoo*.tar.xz and than you can continue
 ```
+## Fixing tree being to /mnt/gentoo or /tmp/gentoo instead of .
+This steps depends on what you want
+```
+cd /tmp or mnt # depends on stage4
+mv gentoo /mnt/gentoo
+rm -rf tmp
+rm Gentoo*.tar.xz
+```
+
 
 ### Mounting the necessary filesystems
 ```
