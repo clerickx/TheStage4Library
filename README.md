@@ -1,17 +1,10 @@
 # TheStage4Library
-An whole Library featuring many precompiled desktops from Gentoo Linux and other distros.
+Welcome to stage4 library a enire library featuring precompiled desktops from Gentoo Linux and other distro's
 
-Please see TheStage4Library introduction Documentation for more detail and introduction.
-
-Please report issues and make requests if you have any also my discord is Xinc#0116 contact me there for anything.
-
-## How to install the stage4's
-
-Hello so i assume you downloaded the stage4 from the tags section i hope.
-
-Well then open the terminal where the file is and then mount the ROOT only to /mnt/gentoo.
 
 ## Installation
+
+**Note: every single step here must be done as root**
 
 Mount root partition recommended /mnt/gentoo
 ```
