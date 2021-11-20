@@ -32,7 +32,7 @@ Step 1. install mega basterd extract it and run it with sudo ./Megabasterd.run a
 ```
 tar -xJpvf file.tar.xz 
 
-### Fixing tree being to /mnt/gentoo or /tmp/gentoo instead of .
+## Fixing tree being to /mnt/gentoo or /tmp/gentoo instead of .
 
 Go into the tmp or mnt folder depending on the stage4 than mv gentoo /mnt/gentoo than rm -r tmp or gentoo than rm Gentoo*.tar.xz and than you can continue
 ```
