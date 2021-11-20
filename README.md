@@ -13,8 +13,7 @@ cd /mnt/gentoo
 
 
 ### Download stage4
-Hello so i do recommend using this piece of software
-https://github.com/tonikelope/megabasterd
+Hello so i do recommend using this piece of [software](https://github.com/tonikelope/megabasterd)
 and just give it an direct link and the path simple
 
 Step 1. install mega basterd extract it and run it with sudo ./Megabasterd.run as it must be as root than click on new download and than put in the link of the releases than select the path which is /mnt/gentoo and than lets dance aka downloading it after it is done you can exit.
