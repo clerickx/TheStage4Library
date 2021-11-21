@@ -39,20 +39,6 @@ openRC: /etc/openrc/conf.d/hostname you will see hostname="myhostname" or someth
 systemD: /etc/hostame should be blank file and just type in the hostname of yours.
 What about the support the DE the user the Arch etc the applications and the init system and all tons of stuff for the Gentoo stage4's ? Well i had made an system for this.
 Basically i will try to provide must DE such as KDE etc xfce the most use ones I will not include the broken ones such as Deepin etc I will also add Unity DE support as i love that and some will appreciate that. For the init system question I will provide BOTH openRC and systemD respectfully and For the arch i will mainly do amd64/64bit but i will try to also import x86/32bit support adding 32bit support will not be terribly hard as my CPU supports both.
-For the applications I made two flavours.
-
-The Core flavours
-The Full flavours
-
-The core flavour basically only includes the full system installed with the DE of choice and the system itself installed but the DE and applications wont be touched in anyway basically only the System and the DE.
-
-
-The core flavour will only include the package neofetch and webkit-gtk
-
-
-The Full Flavour though will include my daily setup apps such as snapd etc I will list them below but it is essentially my apps wine etc I will list them all to make the people see if they like my setup.
-NOTE FOR THE FLAVOURS I WILL NOT INCLUDE THE FULL FLAVOURS IN THE NODESKTOP STAGE4'S AS IT WOULD WASTE TIME AND NOT BE HELPFUL AND WEBKIT-GTK WONT BE INCLUDED IN THE NODESKTOP VERSIONS.
-
 
 For the User I wont be adding both for my Data and user preference it basically means that the DE and apps (if full flavour) or anything will not be touched as there is not even an user it all up to you.
 
@@ -62,31 +48,12 @@ Just an plain system installation with no user also I will make the DM (Display 
 
 Important notice please listen: The root password as the Gentoo Stage4's will include will be stage4 and please change it for your preference if you forget and dont know the password you will need to change it in chroot.
 
-Full flavour Application list:
--Both snapd(for systemd) and flatpak
--vscodium
--Firefox-bin
--wine-staging
--corectl
--discord-bin
--goverlay
--thunderbird-bin
--multimc
--steam-launcher
--VLC
--lutris
--timeshift
--gparted
--microsoft teams
--libreoffice-bin
--layman
--gamemode
--mangohud
-Fun thing i wanted to include in both flavours and all of my stage4's I will install webkit-gtk for you all so you dont have to suffer.
+
+Fun thing i wanted to include in all of my stage4's I will install webkit-gtk for you all so you dont have to suffer.
 
 How will the stage4's be named?
 Well i got an simple layout
-Distro-DE-initsystem-flavour-amd64/x86
+Distro-DE-initsystem--amd64/x86
 
 
 What language will be the default?
