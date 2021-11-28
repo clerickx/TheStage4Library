@@ -30,6 +30,9 @@ mv gentoo /mnt/gentoo
 cd ..
 rm -rf tmp/mnt
 rm Gentoo*.tar.xz
+cd gentoo
+mv * /mnt/gentoo
+cd ..
 rm -rf gentoo
 ```
 
