@@ -27,8 +27,10 @@ This steps depends on what you want
 ```
 cd /tmp or mnt # depends on stage4
 mv gentoo /mnt/gentoo
-rm -rf tmp
+cd ..
+rm -rf tmp/mnt
 rm Gentoo*.tar.xz
+rm -rf gentoo
 ```
 
 ### Fixing Network Issue with Stage4's
