@@ -1,5 +1,5 @@
 # TheStage4Library
-Welcome to stage4 library a entire library featuring precompiled desktops from Gentoo Linux and other distro's
+Welcome to stage4 library an entire library featuring precompiled desktops from Gentoo Linux and other distro's
 
 
 ## Installation
