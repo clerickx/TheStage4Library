@@ -71,7 +71,7 @@ mount /dev/<efipart> /boot/efi
 ```
 
 ### Fstab
-Note: this is just a example fstab
+Note: This is just an example of fstab
 ```
 # /etc/fstab: static file system information.
 #
@@ -109,7 +109,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 ### Make.conf
-This is a important step in installing stage4's any mistake might lead to problems
+This is an important step in installing stage4's any mistake might lead to problems
 ```
 (chroot) root# nano /etc/portage/make.conf
 # These settings were set by the catalyst build script that automatically
@@ -144,5 +144,5 @@ The make.conf is all up to you you might wanna change a few stuff like mirrors v
 done although you may want to add an user.
 
 NOTE:
-Sometimes in the /etc/portage/make.conf the makeopts will be MAKEOPTS="-j8" change the 8 to your number of cores or change the entire thing to MAKEOPTS="-j$(nproc)" to do it automatically sorry it hard to remember all of this.
+Sometimes in the /etc/portage/make.conf the makeopts will be MAKEOPTS="-j8" change the 8 to your number of cores or change the entire thing to MAKEOPTS="-j$(nproc)" to do it automatically sorry it's hard to remember all of this.
 
