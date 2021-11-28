@@ -1,13 +1,13 @@
 Welcome to the Stage4 Library!
 Introduction
-Originally i wanted to create an public release of Fully precompiled gentoo installs for normal use and why? You may ask well this is mainly for having backups and having a full precompiled desktop out of the box Problem is those files/backups are kinda big so they might take a bit to download.
+Originally i wanted to create a public release of Fully precompiled gentoo installs for normal use and why? You may ask well this is mainly for having backups and having a full precompiled desktop out of the box Problem is those files/backups are kinda big so they might take a bit to download.
 
 
-Now the current goal of the project is to suit users to an precompiled desktop with not only gentoo hopefully and try stuff which support chrooting in the installation such as massos (TheSonicMaster) and gentoo as originally thought of.
+Now the current goal of the project is to suit users to a precompiled desktop with not only gentoo hopefully and try stuff which support chrooting in the installation such as massos (TheSonicMaster) and gentoo as originally thought of.
 In simple words it is basically an Entire drive install compressed and can be used in an OS by just extracting it and reinstalling grub and Possibly changing the fstab.
 
 
-For other Distros that i may think such as MassOS i will not be taking any notes of this currently only gentoo things for now as an proper point in gentoo that it is precompiled otherwise you would need to compile it and binary distros such as MassOS or ubuntu or whatever dont really have an point.
+For other Distros that i may think such as MassOS i will not be taking any notes of this currently only gentoo things for now as a proper point in gentoo that it is precompiled otherwise you would need to compile it and binary distros such as MassOS or ubuntu or whatever dont really have a point.
 Gentoo stage4's introduction.
 
 
@@ -27,7 +27,7 @@ Well during the process of getting the stage4 you will need to do 8 things.
 Change fstab to your stuff
 Reinstall grub aka grub-install
 Change the mirrors (unless you live in the UK)
-Change your password (stage4 as the default)
+Change your password (stage4 is the default)
 Change VIDEO_CARDS (depending on gpu)
 
 optionally remove vulkan from the USE="" in /etc/portage/make.conf if you wont be using vulkan or your gpu does not support it and maybe add some of your own stuff.
@@ -38,12 +38,12 @@ optional Change the hostname from localhost or gentoo in some and change the hos
 openRC: /etc/openrc/conf.d/hostname you will see hostname="myhostname" or something else inside the "" replace it with something save and exit.
 systemD: /etc/hostame should be blank file and just type in the hostname of yours.
 What about the support the DE the user the Arch etc the applications and the init system and all tons of stuff for the Gentoo stage4's ? Well i had made an system for this.
-Basically i will try to provide must DE such as KDE etc xfce the most use ones I will not include the broken ones such as Deepin etc I will also add Unity DE support as i love that and some will appreciate that. For the init system question I will provide BOTH openRC and systemD respectfully and For the arch i will mainly do amd64/64bit but i will try to also import x86/32bit support adding 32bit support will not be terribly hard as my CPU supports both.
+Basically i will try to provide most DE's such as KDE etc xfce the most used ones I will not include the broken ones such as Deepin etc I will also add Unity DE support as i love that and some will appreciate that. For the init system question I will provide BOTH openRC and systemD respectfully and For the arch i will mainly do amd64/64bit but i will try to also import x86/32bit support adding 32bit support will not be terribly hard as my CPU supports both.
 
-For the User I wont be adding both for my Data and user preference it basically means that the DE and apps (if full flavour) or anything will not be touched as there is not even an user it all up to you.
+For the User I wont be adding both for my Data and user preference it basically means that the DE and apps (if full flavour) or anything will not be touched as there is not even an user its all up to you.
 
 
-Just an plain system installation with no user also I will make the DM (Display manager) start on boot so you should probably Go into tty (Ctrl Alt F2 Usually i do) then log in as root and add an user and set an password for it.
+Just a plain system installation with no user also I will make the DM (Display manager) start on boot so you should probably Go into tty (Ctrl Alt F2 Usually i do) then log in as root and add an user and set an password for it.
 
 
 Important notice please listen: The root password as the Gentoo Stage4's will include will be stage4 and please change it for your preference if you forget and dont know the password you will need to change it in chroot.
