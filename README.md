@@ -2,6 +2,16 @@
 Welcome to stage4 library an entire library featuring precompiled desktops from Gentoo Linux and other distro's
 
 
+
+### Our To-Do List
+Incase you were wondering what we are gonna add in our library, here is our official [trello](https://trello.com/b/nh4u8iIM/thestage4library-todo).
+
+### Known Issues:
+```
+. MAKEOPTS="-j8" instead of MAKEOPTS="-j$(nproc)"
+. DM issue causing the DM not to appear (only in some stage4's)
+. Tree not being .
+```
 ## Installation
 
 **Note: every single step here must be done as root**
@@ -9,12 +19,6 @@ Welcome to stage4 library an entire library featuring precompiled desktops from 
 Mount root partition recommended /mnt/gentoo
 ```
 cd /mnt/gentoo
-```
-### Known Issues:
-```
-. MAKEOPTS="-j8" instead of MAKEOPTS="-j$(nproc)"
-. DM issue causing the DM not to appear (only in some stage4's)
-. Tree not being .
 ```
 ### Download stage4
 Hello so i do recommend using this piece of [software](https://github.com/tonikelope/megabasterd)
@@ -152,4 +156,3 @@ done although you may want to add an user.
 
 NOTE:
 Sometimes in the /etc/portage/make.conf the makeopts will be MAKEOPTS="-j8" change the 8 to your number of cores or change the entire thing to MAKEOPTS="-j$(nproc)" to do it automatically sorry it's hard to remember all of this.
-
