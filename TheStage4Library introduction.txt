@@ -37,22 +37,22 @@ optional Change the hostname from localhost or gentoo in some and change the hos
 
 openRC: /etc/openrc/conf.d/hostname you will see hostname="myhostname" or something else inside the "" replace it with something save and exit.
 systemD: /etc/hostame should be blank file and just type in the hostname of yours.
-What about the support the DE the user the Arch etc the applications and the init system and all tons of stuff for the Gentoo stage4's ? Well i had made an system for this.
+What about the support the DE the user the Arch etc the applications and the init system and all tons of stuff for the Gentoo stage4's ? Well i had made a system for this.
 Basically i will try to provide most DE's such as KDE etc xfce the most used ones I will not include the broken ones such as Deepin etc I will also add Unity DE support as i love that and some will appreciate that. For the init system question I will provide BOTH openRC and systemD respectfully and For the arch i will mainly do amd64/64bit but i will try to also import x86/32bit support adding 32bit support will not be terribly hard as my CPU supports both.
 
-For the User I wont be adding both for my Data and user preference it basically means that the DE and apps (if full flavour) or anything will not be touched as there is not even an user its all up to you.
+For the User I wont be adding both for my Data and user preference it basically means that the DE and apps (if full flavour) or anything will not be touched as there is not even a user its all up to you.
 
 
-Just a plain system installation with no user also I will make the DM (Display manager) start on boot so you should probably Go into tty (Ctrl Alt F2 Usually i do) then log in as root and add an user and set an password for it.
+Just a plain system installation with no user also I will make the DM (Display manager) start on boot so you should probably Go into tty (Ctrl Alt F2 Usually i do) then log in as root and add an user and set a password for it.
 
 
-Important notice please listen: The root password as the Gentoo Stage4's will include will be stage4 and please change it for your preference if you forget and dont know the password you will need to change it in chroot.
+Important notice please listen: The root password for the Gentoo Stage4's will be stage4 and please change it for your preference if you forget and dont know the password you will need to change it in chroot.
 
 
 Fun thing i wanted to include in all of my stage4's I will install webkit-gtk for you all so you dont have to suffer.
 
 How will the stage4's be named?
-Well i got an simple layout
+Well i got a simple layout
 Distro-DE-initsystem-amd64/x86
 
 
