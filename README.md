@@ -10,8 +10,12 @@ Mount root partition recommended /mnt/gentoo
 ```
 cd /mnt/gentoo
 ```
-
-
+### Known Issues:
+```
+. MAKEOPTS="-j8" instead of MAKEOPTS="-j$(nproc)"
+. DM issue causing the DM not to appear (only in some stage4's)
+. Tree not being .
+```
 ### Download stage4
 Hello so i do recommend using this piece of [software](https://github.com/tonikelope/megabasterd)
 and just give it a direct link and the path simple
