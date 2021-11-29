@@ -6,6 +6,9 @@ Welcome to stage4 library an entire library featuring precompiled desktops from 
 ### Our To-Do List
 Incase you were wondering what we are gonna add in our library, here is our official [trello](https://trello.com/b/nh4u8iIM/thestage4library-todo).
 
+### Our Discord Server!
+We have made our own server. If you would like to talk to people, here it [is](https://discord.gg/wBty8aMjRZ)!
+
 ### Known Issues:
 ```
 . MAKEOPTS="-j8" instead of MAKEOPTS="-j$(nproc)"
