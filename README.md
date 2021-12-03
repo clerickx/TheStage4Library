@@ -15,6 +15,13 @@ We have made our own server. If you would like to talk to people, here it [is](h
 . DM issue causing the DM not to appear (only in some stage4's)
 . Tree not being .
 ```
+### Creating your own stage4's
+
+Simple mount the root partition only here i will do it at /mnt/gentoo and i run this 
+sudo tar -cJpvf file.tar.xz at the /mnt/gentoo directory
+and to extract do
+sudo tar -xJpvf file.tar.xz
+
 ## Installation
 
 **Note: every single step here must be done as root**
