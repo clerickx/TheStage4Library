@@ -18,7 +18,7 @@ We have made our own server. If you would like to talk to people, here it [is](h
 ### Creating your own stage4's
 
 Simple mount the root partition only here i will do it at /mnt/gentoo and i run this 
-sudo tar cJpvf file.tar.xz /mnt/gentoo/.
+sudo tar -cJpvf file.tar.xz /mnt/gentoo/.
 and to extract do
 sudo tar -xJpvf file.tar.xz
 
@@ -143,7 +143,7 @@ CXXFLAGS="${COMMON_FLAGS}"
 FCFLAGS="${COMMON_FLAGS}"
 FFLAGS="${COMMON_FLAGS}"
 USE="vulkan"
-MAKEOPTS="-j8"
+MAKEOPTS="-j$(nproc)"
 VIDEO_CARDS="amdgpu radeon radeonsi"
 ABI_X86="64 32"
 ACCEPT_LICENSE="*"
