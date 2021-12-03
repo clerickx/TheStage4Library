@@ -18,7 +18,7 @@ We have made our own server. If you would like to talk to people, here it [is](h
 ### Creating your own stage4's
 
 Simple mount the root partition only here i will do it at /mnt/gentoo and i run this 
-sudo tar -cJpvf file.tar.xz at the /mnt/gentoo directory
+sudo tar -cJpvf file.tar.xz . at the /mnt/gentoo directory
 and to extract do
 sudo tar -xJpvf file.tar.xz
 
