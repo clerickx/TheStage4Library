@@ -18,7 +18,7 @@ We have made our own server. If you would like to talk to people, here it [is](h
 ### Creating your own stage4's
 
 Simple mount the root partition only here i will do it at /mnt/gentoo and i run this 
-sudo tar -cJpvf file.tar.xz /mnt/gentoo/.
+cd to the /mnt/wherever and then do sudo tar -cJpvf /path/to/output/tarball.tar.xz *
 and to extract do
 sudo tar -xJpvf file.tar.xz
 
@@ -39,19 +39,6 @@ Step 1. install mega basterd extract it and run it with sudo ./Megabasterd.run a
 ### Unpack stage4
 ```
 tar -xJpvf file.tar.xz 
-```
-## Fixing tree being to /mnt/gentoo or /tmp/gentoo instead of .
-These steps depends on what you want
-```
-cd /tmp or mnt # depends on stage4
-mv gentoo /mnt/gentoo
-cd ..
-rm -rf tmp/mnt
-rm Gentoo*.tar.xz
-cd gentoo
-mv * /mnt/gentoo
-cd ..
-rm -rf gentoo
 ```
 
 ### Fixing Network Issue with Stage4's
