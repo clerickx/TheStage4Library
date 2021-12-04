@@ -36,6 +36,10 @@ and just give it a direct link and the path simple
 
 Step 1. install mega basterd extract it and run it with sudo ./Megabasterd.run as it must be done as root then click on new download and then put in the link of the release you want then select the path which is /mnt/gentoo and than lets dance aka download it after it is done you can exit.
 
+Other method:
+
+download the stage4 using the direct link at /mnt/gentoo (This method is recommended only if megabasterd is out of limit for you)
+
 ### Unpack stage4
 ```
 tar -xJpvf file.tar.xz 
