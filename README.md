@@ -33,7 +33,7 @@ cd /mnt/gentoo
 ### Download stage4
 If you have an Live USB and want to use the normal download you can use your web browser in root and save it to /mnt/gentoo.
 
-Or with the recommended method you cd into /mnt/gentoo and wget the link from the direct link section and that should download it just fine/
+Or with the recommended method you cd into /mnt/gentoo and wget the link from the direct link section and that should download it just fine.
 
 ### Unpack stage4
 ```
