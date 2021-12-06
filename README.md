@@ -42,9 +42,6 @@ tar -xJpvf file.tar.xz
 
 ### Fixing Network Issue with Stage4's
 ```
-Run 
-cp /mnt/gentoo/usr/share/portage/config/repos.conf /mnt/gentoo/etc/portage/repos.conf/gentoo.conf
-than
 cp --dereference /etc/resolv.conf /mnt/gentoo/etc
 ```
 
