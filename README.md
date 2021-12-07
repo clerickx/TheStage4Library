@@ -31,7 +31,7 @@ Mount root partition recommended /mnt/gentoo
 cd /mnt/gentoo
 ```
 ### Download stage4
-Hello you must have an GUI live enviorment to download the stage4's
+Hello you must have an GUI live enviorment to download the stage4's or if possible you could use an terminal web browser that also works just it must have an copy link feature.
 
 Anyways.
 
