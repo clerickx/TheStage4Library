@@ -17,7 +17,7 @@ We have made our own server. If you would like to talk to people, here it [is](h
 ```
 ### Creating your own stage4's
 
-Simple mount the root partition only here i will do it at /mnt/gentoo and i run this 
+Simple mount the root partition only here i will do it at /mnt/gentoo and then run this 
 cd to the /mnt/wherever and then do sudo tar -cJpvf /path/to/output/tarball.tar.xz *
 and to extract do
 sudo tar -xJpvf file.tar.xz
@@ -31,11 +31,11 @@ Mount root partition recommended /mnt/gentoo
 cd /mnt/gentoo
 ```
 ### Download stage4
-Hello you must have an GUI live enviorment to download the stage4's or if possible you could use an terminal web browser that also works just it must have an copy link feature.
+You must have a GUI live enviorment to download the stage4's or if possible you could use a terminal web browser that also works just it must have a copy link feature.
 
 Anyways.
 
-First open the link provided in your specific stage4 then right click  the download button and select copy link (depending on the web browser) than cd into /mnt/gentoo and wget URL and than your done.
+First open the link provided in your specific stage4 then right click  the download button and select copy link (depending on the web browser) then cd into /mnt/gentoo and wget URL and then your done.
 
 ### Unpack stage4
 ```
@@ -57,7 +57,7 @@ mount --make-rslave /mnt/gentoo/dev
 ```
 
 ### Note: only when using non-gentoo media
-which you probably will not be using. as far as i know the one mega doesn't allow direct link downloads
+Which you probably will not be using. As far as i know mega doesn't allow direct link downloads.
 ```
 test -L /dev/shm && rm /dev/shm && mkdir /dev/shm
 mount --types tmpfs --options nosuid,nodev,noexec shm /dev/shm
@@ -145,9 +145,9 @@ PKGDIR="/var/cache/binpkgs"
 LC_MESSAGES=C
 GRUB_PLATFORMS="efi-64"
 ```
-The make.conf is all up to you you might wanna change a few stuff like mirrors videocards and makeopts
+The make.conf is all up to you although you might wanna change a few stuff like mirrors videocards and makeopts.
 
-done although you may want to add an user.
+Youre done although you may want to add an user.
 
 NOTE:
 Sometimes in the /etc/portage/make.conf the makeopts will be MAKEOPTS="-j8" change the 8 to your number of cores or change the entire thing to MAKEOPTS="-j$(nproc)" to do it automatically sorry it's hard to remember all of this also please update @world if you change the VIDEO_CARDS in /etc/portage/make.conf
