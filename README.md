@@ -147,7 +147,7 @@ GRUB_PLATFORMS="efi-64"
 ```
 The make.conf is all up to you although you might wanna change a few stuff like mirrors videocards and makeopts.
 
-Youre done although you may want to add an user.
+Youre done but you may want to add an user.
 
 NOTE:
 Sometimes in the /etc/portage/make.conf the makeopts will be MAKEOPTS="-j8" change the 8 to your number of cores or change the entire thing to MAKEOPTS="-j$(nproc)" to do it automatically sorry it's hard to remember all of this also please update @world if you change the VIDEO_CARDS in /etc/portage/make.conf
