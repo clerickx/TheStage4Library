@@ -57,7 +57,6 @@ mount --make-rslave /mnt/gentoo/dev
 ```
 
 ### Note: only when using non-gentoo media
-Which you probably will not be using. As far as i know mega doesn't allow direct link downloads.
 ```
 test -L /dev/shm && rm /dev/shm && mkdir /dev/shm
 mount --types tmpfs --options nosuid,nodev,noexec shm /dev/shm
