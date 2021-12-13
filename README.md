@@ -20,7 +20,7 @@ We have made our own server. If you would like to talk to people, here it [is](h
 Simple mount the root partition only here i will do it at /mnt/gentoo and then run this 
 cd to the /mnt/wherever and then do sudo tar -cJpvf /path/to/output/tarball.tar.xz *
 and to extract do
-sudo tar -xJpvf file.tar.xz
+tar xpvf file.tar.xz --xattrs-include='*.*' --numeric-owner 
 
 ## Installation
 
