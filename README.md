@@ -22,7 +22,7 @@ cd to the /mnt/wherever and then do sudo tar -cJpvf /path/to/output/tarball.tar.
 and to extract do
 sudo tar xpvf file.tar.xz --xattrs-include='*.*' --numeric-owner 
 
-##FAQ
+### FAQ
 
 Welcome to TheStage4Library FAQ! Here we will be showing off the questions that you may ask and have answers for them. (Any questions requested will be added if they are good)
 ```
@@ -45,7 +45,7 @@ For the first one i use that to give the person an automatic max core detections
 Question: What kernel source does the stage4's use?
 Answer:
 It uses the precompiled gentoo-sources kernel to fit most users.
-
+```
 ## Installation
 
 **Note: every single step here must be done as root**
