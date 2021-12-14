@@ -22,6 +22,30 @@ cd to the /mnt/wherever and then do sudo tar -cJpvf /path/to/output/tarball.tar.
 and to extract do
 sudo tar xpvf file.tar.xz --xattrs-include='*.*' --numeric-owner 
 
+##FAQ
+
+Welcome to TheStage4Library FAQ! Here we will be showing off the questions that you may ask and have answers for them. (Any questions requested will be added if they are good)
+```
+Question:
+Why won't you add other unofficial init systems like runit?
+Answer:
+Unofficial init systems tend to be very hard to setup and the expierence is best is pretty terrible so we have no plans of adding anything apart of openRC and systemD.
+
+Question:
+Why don't you use testing packages globally?
+Answer:
+I don't set testing packages globally mainly due to me hating testing packages as of previous expierence although you may ask why do i have for some stage4's?
+Well usually the case is to have the better expierence you will need to have testing packages globally to make it good for use.
+
+Question:
+Why do you use MAKEOPTS="-j$(nproc)" and the vulkan use flag in your /etc/portage/make.conf file?
+Answer:
+For the first one i use that to give the person an automatic max core detections instead of manually putting it in and for the second one i choose that as today stuff use vulkan quite a bit an good example like linux gaming although if you have any problems with the current use flags you can change them it is up to you.
+
+Question: What kernel source does the stage4's use?
+Answer:
+It uses the precompiled gentoo-sources kernel to fit most users.
+
 ## Installation
 
 **Note: every single step here must be done as root**
